@@ -35,7 +35,7 @@ else{
 
 function getZip() {
     var userInput = document.getElementById("userInput").value;
-    zip = "http://api.openweathermap.org/data/2.5/weather?zip="+userInput+"&appid=d02c4a194c15c23d8256f9f384c418a3"
+    zip = "https://api.openweathermap.org/data/2.5/weather?zip="+userInput+"&appid=d02c4a194c15c23d8256f9f384c418a3"
 
 fetch(zip)
 .then((resp) => resp.json()) // Transform the data into json
