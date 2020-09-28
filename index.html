@@ -1,6 +1,120 @@
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d59df2d2d1.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    </body>
+
+    <div class="container pb-2">
+        <div class="row">
+            <div class="col text-center bg-primary">
+                <h1>Weather App</h1>
+            </div>
+        </div>
+        <div class="row pt-2">
+            <div class="col text-center">
+                <input type="text" id="userInput">  Enter Zip Code</input>
+                <button onclick="getZip()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="content" class="container border">
+        <div class="container pt-2">
+            <div class="row d-flex justify-content-center">
+                <div class="col-8 text-center border bg-primary">
+                    <h3>City</h3>
+                    <div class="row d-flex justify-content-center border-top bg-white">
+                        <div class="col-8 text-center">
+                            <p id="cityName">reeeee</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pt-2">
+            <div class="row d-flex justify-content-center">
+                <div class="col-8 text-center border bg-primary">
+                    <h3>Temperature</h3>
+                    <div class="row bg-white">
+                        <div id="kelv" class="col-4 border-top border-right">ree</div>
+                        <div id="far" class="col-4 border-top border-right">ree</div>
+                        <div id="cels" class="col-4 border-top">ree</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pt-2">
+            <div class="row d-flex justify-content-center">
+                <div class="col-8 text-center border bg-primary">
+                    <h3>Condition</h3>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col text-center border-top bg-white">
+                            <p id="condName">reeee</p>
+                            <i id="icon" class=""></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pt-2">
+            <div class="row d-flex justify-content-center">
+                <div class="col-8 text-center border bg-primary">
+                    <h3>Season Display</h3>
+                    <div class="row d-flex justify-content-center bg-white">
+                        <div class="col text-center border-top">
+                            <img id="season" src="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+
 </html>
