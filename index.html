@@ -11,22 +11,23 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./theme.css">
     <script src="https://kit.fontawesome.com/d59df2d2d1.js" crossorigin="anonymous"></script>
 
 </head>
 
-<body>
+<body class="bg-success">
 
     <div class="container pb-2">
         <div class="row">
-            <div class="col text-center bg-primary">
+            <div class="col text-center bg-primary text-white">
                 <h1>Weather App</h1>
             </div>
         </div>
         <div class="row pt-2">
             <div class="col text-center">
-                <input type="text" id="userInput" placeholder="Enter Zip Code"></input>
-                <button onclick="getZip()">Submit</button>
+                <input class="bg-primary text-white" type="text" id="userInput" placeholder="Enter Zip Code"></input>
+                <button class="bg-primary text-white" onclick="getZip()">Submit</button>
             </div>
         </div>
     </div>
@@ -35,10 +36,10 @@
         <div class="container pt-2">
             <div class="row d-flex justify-content-center">
                 <div class="col-8 text-center border bg-primary">
-                    <h3>City</h3>
-                    <div class="row d-flex justify-content-center border-top bg-white">
-                        <div class="col-8 text-center">
-                            <p id="cityName">reeeee</p>
+                    <h3 class="text-white">City</h3>
+                    <div class="row d-flex justify-content-center border-top bg-success">
+                        <div class="col-8 text-center bg-success">
+                            <p class="text-primary" id="cityName">reeeee</p>
                         </div>
                     </div>
                 </div>
@@ -48,11 +49,11 @@
         <div class="container pt-2">
             <div class="row d-flex justify-content-center">
                 <div class="col-8 text-center border bg-primary">
-                    <h3>Temperature</h3>
-                    <div class="row bg-white">
-                        <div id="kelv" class="col-4 border-top border-right">ree</div>
-                        <div id="far" class="col-4 border-top border-right">ree</div>
-                        <div id="cels" class="col-4 border-top">ree</div>
+                    <h3 class="text-white">Temperature</h3>
+                    <div class="row bg-success">
+                        <div id="kelv" class="col-4 border-top border-right text-primary">ree</div>
+                        <div id="far" class="col-4 border-top border-right text-primary">ree</div>
+                        <div id="cels" class="col-4 border-top text-primary">ree</div>
 
                     </div>
                 </div>
@@ -62,30 +63,32 @@
         <div class="container pt-2">
             <div class="row d-flex justify-content-center">
                 <div class="col-8 text-center border bg-primary">
-                    <h3>Condition</h3>
+                    <h3 class="text-white">Condition</h3>
                     <div class="row d-flex justify-content-center">
-                        <div class="col text-center border-top bg-white">
-                            <p id="condName">reeee</p>
-                            <i id="icon" class=""></i>
+                        <div class="col text-center border-top bg-success">
+                            <p id="condName" class="text-primary">reeee</p>
+                            <i class="text-primary" id="icon" class=""></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container pt-2">
+        <div class="container pt-2 pb-2">
             <div class="row d-flex justify-content-center">
                 <div class="col-8 text-center border bg-primary">
-                    <h3>Season Display</h3>
-                    <div class="row d-flex justify-content-center bg-white">
+                    <h3 class="text-white">Season Display</h3>
+                    <div class="row d-flex justify-content-center bg-success">
                         <div class="col text-center border-top">
-                            <img id="season" src="">
+                            <img class="pt-2 pb-2" id="season" src="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+   
+    
 
 
 
